@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Geliat-Bold";
+  src: url("../fonts/Geliat-bold.eot");
+  src: url("../fonts/Geliat-bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geliat-bold.woff") format("woff"),
+    url("../fonts/Geliat-bold.ttf") format("truetype"),
+    url("../fonts/Geliat-bold.svg#Geliat-Bold")
+      format("svg");
+  font-weight:700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geliat-Semibold";
+  src: url("../fonts/Geliat-semibold.eot");
+  src: url("../fonts/Geliat-semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geliat-semibold.woff") format("woff"),
+    url("../fonts/Geliat-semibold.ttf") format("truetype"),
+    url("../fonts/Geliat-semibold.svg#Geliat-Semibold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geliat-Medium";
+  src: url("../fonts/Geliat-medium.eot");
+  src: url("../fonts/Geliat-medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Geliat-medium.woff") format("woff"),
+    url("../fonts/Geliat-medium.ttf") format("truetype"),
+    url("../fonts/Geliat-medium.svg#Geliat-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geliat-Regular";
+  src: url("../fonts/Geliat-regular.eot");
+  src: url("../fonts/Geliat-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Geliat-regular.woff") format("woff"),
+    url("../fonts/Geliat-regular.ttf") format("truetype"),
+    url("../fonts/Geliat-regular.svg#Geliat-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.39);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.39);
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(0, 0, 0, 0.39);
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.39);
+}
+body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,196 @@
+header.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  nav.navbar {
+    background: transparent !important;
+    padding: 25px 0;
+    a.navbar-brand {
+      img {
+        max-width: auto;
+        max-height: auto;
+      }
+    }
+    .navbar-collapse {
+      background-color: transparent;
+      justify-content: center;
+      .btns_wrap {
+        display: none;
+      }
+    }
+    button.navbar-toggler.collapsed {
+      span.navbar-toggler-icon {
+        background-image: url("../../assets/images/MenuIcon.png");
+        width: 18px !important;
+        height: 12px !important;
+        background-size: 24px 24px !important;
+        background-clip: content-box;
+      }
+    }
+    button.navbar-toggler {
+      border: none;
+      padding: 0px;
+      span.navbar-toggler-icon {
+        background-image: url("../../assets/images/crossIcon.png");
+        width: 18px !important;
+        height: 12px !important;
+        background-size: 24px 24px !important;
+        background-clip: content-box;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .navbar-nav {
+      a.nav-link {
+        color: #fff;
+        font-family: "Geliat-Regular";
+        font-size: 16px;
+        margin: 0 16px;
+        line-height: 20px;
+      }
+      .dropdown-toggle {
+        &::after {
+          // background-image: url('../../assets/images/angleDown.png');
+          width: 9px;
+          height: 6px;
+          background-size: 9px 6px;
+          border: none;
+          position: absolute;
+          top: 16px;
+        }
+      }
+    }
+  }
+  .btns_wrap {
+    position: relative;
+    .btn-btnSecondary {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18.88px;
+      text-align: center;
+      border-radius: 6px;
+      font-family: "Geliat-Regular";
+      padding: 13px 22px;
+      background: #183f33;
+      color: #72e6a2;
+      border: 1px solid #72e6a2;
+
+      svg {
+        margin-left: 8px;
+      }
+      &:hover {
+        color: #183f33;
+        background: #72e6a2;
+      }
+    }
+    .btnprimary.btn.btn-primary {
+      margin-left: 8px;
+      border-radius: 6px;
+      padding: 10px 18px;
+      font-family: "Geliat-Regular";
+      background-color: #72e6a2;
+      color: #183f33;
+      border: 1px solid #72e6a2;
+
+      &:hover {
+        color: #72e6a2;
+        background: #183f33;
+        border: 1px solid #72e6a2;
+      }
+    }
+  }
+}
+/* Media Query start */
+@media only screen and (max-width: 1199px) {
+  header.header {
+    nav.navbar {
+      padding: 15px 0;
+      .navbar-nav {
+        a.nav-link {
+          font-size: 15px;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  header.header {
+    nav.navbar {
+      .btns_wrap {
+        display: none;
+      }
+      .navbar-collapse {
+        background-color: #fff;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        .btns_wrap {
+          display: block;
+          padding-bottom: 30px;
+        }
+        .navbar-nav {
+          padding: 40px 0 0 22px;
+          a.nav-link {
+            color: #000;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .navbar-nav {
+      .dropdown-menu.show {
+        width: calc(100% - 20px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header.header {
+    nav.navbar {
+      .navbar-nav {
+        a.nav-link {
+          margin: 0 10px;
+        }
+      }
+      .navbar-collapse {
+        .btns_wrap {
+          margin-left: 15px;
+          button.btnprimary.btn.btn-primary,
+          .btn-btnSecondary {
+            margin-left: 5px;
+            border-radius: 6px;
+            padding: 8px 15px;
+            line-height: 23px;
+            width: auto;
+          }
+        }
+      }
+    }
+    a.navbar-brand {
+      img {
+        max-width: 178px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  header.header {
+    nav.navbar {
+      .navbar-collapse {
+        .navbar-nav {
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}
